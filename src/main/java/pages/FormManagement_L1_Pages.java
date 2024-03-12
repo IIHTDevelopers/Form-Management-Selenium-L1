@@ -1,64 +1,55 @@
 package pages;
 
-import java.awt.Robot;
-import java.awt.Toolkit;
-import java.awt.datatransfer.StringSelection;
-import java.awt.event.KeyEvent;
 import java.util.Map;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
-import org.testng.Reporter;
 import org.testng.asserts.SoftAssert;
 
 public class FormManagement_L1_Pages extends StartupPage 
 {
 	public SoftAssert softAssert;
 	//WebElemet Declaration
-	By pageTitleText = By.xpath("//title[contains(text() , 'Register')]"); 
-	By switchToNavigationMenu = By.xpath("//a[contains(text() , 'SwitchTo')]"); 
-	By Alerts = By.xpath("//a[contains(text() , 'Alerts')]"); 
-	By ButtonToDisplayAnAlertBox = By.xpath("//button[contains(text() , 'click the button to display an  alert box:')]"); 
-	By RegisterNavigationMenu = By.xpath("//a[contains(text() , 'Register')]"); 
-	By firstNameTextbox = By.xpath("//input[@placeholder='First Name']"); 
-	By lastNameTextbox = By.xpath("//input[@placeholder='Last Name']"); 
-	By addressInputAreabox = By.xpath("//textarea[@ng-model='Adress']"); 
-	By emailAddressTextbox = By.xpath("//input[@type='email']"); 
-	By phoneNumberTextbox = By.xpath("//input[@type='tel']"); 
-	By maleRadioButton = By.xpath("//input[@value='Male']"); 
-	By feMaleRadioButton = By.xpath("//input[@value='FeMale']"); 
-	By CricketCheckBox = By.xpath("//input[@value='Cricket']"); 
-	By MoviesCheckBox = By.xpath("//input[@value='Movies']"); 
-	By HockeyCheckBox = By.xpath("//input[@value='Hockey']"); 
-	By languageDropdown = By.xpath("//div[@id='msdd']"); 
-	By selectEnglish = By.xpath("//a[contains(text(), 'English')]"); 
-	By selectHindi = By.xpath("//a[contains(text(), 'Hindi')]"); 
-	By skillsDropdown = By.xpath("//select[@id='Skills']"); 
-	By countryDropdown = By.xpath("//select[@id='countries']"); 
-	By clickOnCountryDropdown = By.xpath("//span[@role='combobox']"); 
-	By selectCountryAustralia = By.xpath("//li[contains(text(), 'Australia')]"); 
-	By selectCountryBangladesh = By.xpath("//li[contains(text(), 'Bangladesh')]"); 
-	By selectCountryDenmark = By.xpath("//li[contains(text(), 'Denmark')]"); 
-	By selectCountryHongKong = By.xpath("//li[contains(text(), 'Hong Kong')]"); 
-	By selectCountryIndia = By.xpath("//li[contains(text(), 'India')]"); 
-	By selectCountryJapan = By.xpath("//li[contains(text(), 'Japan')]"); 
-	By selectCountryNetherlands = By.xpath("//li[contains(text(), 'Netherlands')]"); 
-	By selectCountryNewZealand = By.xpath("//li[contains(text(), 'New Zealand')]"); 
-	By selectCountrySouthAfrica = By.xpath("//li[contains(text(), 'South Africa')]"); 
-	By selectCountryUnitedStatesOfAmerica = By.xpath("//li[contains(text(), 'United States of America')]"); 
-	By selectYear = By.xpath("//select[@placeholder='Year']");
-	By selectMonth = By.xpath("//select[@placeholder='Month']"); 
-	By selectDate = By.xpath("//select[@placeholder='Day']"); 
-	By password = By.xpath("//input[@id='firstpassword']");
-	By confirmPassword = By.xpath("//input[@id='secondpassword']");
-	By submitButton = By.xpath("//button[@id='submitbtn']");
-	By refreshButton = By.xpath("//button[@value='Refresh']");
-	By chooseFile = By.xpath("//input[@id='imagesrc']/..");
-	By uploadImageFileName = By.xpath("//input[@id='imagesrc']");
+	By pageTitleText = By.xpath(""); 
+	By switchToNavigationMenu = By.xpath(""); 
+	By Alerts = By.xpath(""); 
+	By ButtonToDisplayAnAlertBox = By.xpath(""); 
+	By RegisterNavigationMenu = By.xpath(""); 
+	By firstNameTextbox = By.xpath(""); 
+	By lastNameTextbox = By.xpath(""); 
+	By addressInputAreabox = By.xpath(""); 
+	By emailAddressTextbox = By.xpath(""); 
+	By phoneNumberTextbox = By.xpath(""); 
+	By maleRadioButton = By.xpath(""); 
+	By feMaleRadioButton = By.xpath(""); 
+	By CricketCheckBox = By.xpath(""); 
+	By MoviesCheckBox = By.xpath(""); 
+	By HockeyCheckBox = By.xpath(""); 
+	By languageDropdown = By.xpath(""); 
+	By selectEnglish = By.xpath(""); 
+	By selectHindi = By.xpath(""); 
+	By skillsDropdown = By.xpath(""); 
+	By countryDropdown = By.xpath(""); 
+	By clickOnCountryDropdown = By.xpath(""); 
+	By selectCountryAustralia = By.xpath(""); 
+	By selectCountryBangladesh = By.xpath(""); 
+	By selectCountryDenmark = By.xpath(""); 
+	By selectCountryHongKong = By.xpath(""); 
+	By selectCountryIndia = By.xpath(""); 
+	By selectCountryJapan = By.xpath(""); 
+	By selectCountryNetherlands = By.xpath(""); 
+	By selectCountryNewZealand = By.xpath(""); 
+	By selectCountrySouthAfrica = By.xpath(""); 
+	By selectCountryUnitedStatesOfAmerica = By.xpath(""); 
+	By selectYear = By.xpath("");
+	By selectMonth = By.xpath(""); 
+	By selectDate = By.xpath(""); 
+	By password = By.xpath("");
+	By confirmPassword = By.xpath("");
+	By submitButton = By.xpath("");
+	By refreshButton = By.xpath("");
+	By chooseFile = By.xpath("");
+	By uploadImageFileName = By.xpath("");
 	
 	
 	
@@ -82,13 +73,8 @@ public class FormManagement_L1_Pages extends StartupPage
 	 * @author : Yaksha
 	 */
 	public String validateTitleOfHomePage() throws Exception {
-		try {
-			String titleOfTheHomePage = driver.getTitle();
-			System.out.println("Title of the HomePage:"+titleOfTheHomePage);
-			return titleOfTheHomePage;
-		}catch(Exception e) {
-			throw e;
-		}
+		
+		return null;
 		
 	}
 	/**@Test2
@@ -99,16 +85,8 @@ public class FormManagement_L1_Pages extends StartupPage
 	 * @author : Yaksha
 	 */
 	public String  clickOnSwitchToAlertandValidateTitlePage() throws Exception {
-		try {
-			 commonEvents.click(switchToNavigationMenu);
-			 commonEvents.click(Alerts);
-			 driver.getTitle();
-			 String titleOfThePage = driver.getTitle();
-			 System.out.println("Title of the alert page:"+titleOfThePage);
-			 return titleOfThePage;
-		}catch(Exception e) {
-			throw e;
-		}
+		
+		return null;
 	}
 	
 	/**@Test3
@@ -120,17 +98,8 @@ public class FormManagement_L1_Pages extends StartupPage
 	 */
 	
 	public String handleAlertsPopupandValidateTheTextInsideAnAlertsPopup() throws Exception {
-		try {
-			 commonEvents.click(ButtonToDisplayAnAlertBox);
-			 Alert alert = driver.switchTo().alert();
-			 Thread.sleep(5000);
-			 String alertPopUpMessage =alert.getText();
-			 System.out.println("Alert popup Message: " + alertPopUpMessage );
-			 driver.switchTo().alert().accept();
-			 return alertPopUpMessage;
-		}catch(Exception e) {
-			throw e;
-		}
+		
+		return null;
 	}
 	
 	/**@Test4
@@ -142,35 +111,8 @@ public class FormManagement_L1_Pages extends StartupPage
 	 */
 	
 	public boolean clickOnRegisterLinkandFillTheForms(Map<String, String> expectedData) throws Exception {
-		try {
-			    commonEvents.click(RegisterNavigationMenu);
-			    commonEvents.sendKeys(firstNameTextbox,expectedData.get("firstName"));	
-			    commonEvents.sendKeys(lastNameTextbox,expectedData.get("lastName"));	
-				commonEvents.sendKeys(addressInputAreabox,expectedData.get("adds"));	
-				commonEvents.sendKeys(emailAddressTextbox,expectedData.get("emaiI"));	
-				commonEvents.sendKeys(phoneNumberTextbox,expectedData.get("phoneNo"));
-				Thread.sleep(4000);
-				commonEvents.click(maleRadioButton);
-				commonEvents.click(CricketCheckBox);
-				commonEvents.click(MoviesCheckBox);
-				commonEvents.click(HockeyCheckBox);
-				commonEvents.click(languageDropdown);
-				commonEvents.click(selectEnglish);
-				commonEvents.click(selectHindi);
-				commonEvents.selectByVisibleText(skillsDropdown, "Java");
-				commonEvents.selectByVisibleText(countryDropdown, "Select Country");
-			    commonEvents.click(clickOnCountryDropdown);
-			    commonEvents.click(selectCountryIndia);
-			    commonEvents.selectByValue(selectYear, "1996");
-			    commonEvents.selectByVisibleText(selectMonth, "June");
-			    commonEvents.selectByValue(selectDate, "25");  
-			    commonEvents.sendKeys(password,expectedData.get("password"));
-			    commonEvents.sendKeys(confirmPassword,expectedData.get("confirmPassword"));		
-				commonEvents.click(submitButton);
-		}catch(Exception e) {
-			throw e;
-		}
-		return true;
+		
+		return false;
 	}
 	/**@Test5
 	 * about this method clickOnSelectCountryDropdownAndSelectEachCountryOneByOne() 
@@ -181,33 +123,8 @@ public class FormManagement_L1_Pages extends StartupPage
 	 */
 	
 	public boolean clickOnSelectCountryDropdownAndSelectEachCountryOneByOne() throws Exception {
-		try {
-			driver.navigate().refresh();
-			Thread.sleep(3000);
-			commonEvents.click(clickOnCountryDropdown);
-			 commonEvents.click(selectCountryAustralia); 
-			 commonEvents.click(clickOnCountryDropdown);
-			 commonEvents.click(selectCountryBangladesh); 
-			 commonEvents.click(clickOnCountryDropdown);
-			 commonEvents.click(selectCountryDenmark); 
-			 commonEvents.click(clickOnCountryDropdown);
-			 commonEvents.click(selectCountryHongKong);
-			 commonEvents.click(clickOnCountryDropdown);
-			 commonEvents.click(selectCountryIndia);
-			 commonEvents.click(clickOnCountryDropdown);
-			 commonEvents.click(selectCountryJapan);
-			 commonEvents.click(clickOnCountryDropdown);
-			 commonEvents.click(selectCountryNetherlands);
-			 commonEvents.click(clickOnCountryDropdown);
-			 commonEvents.click(selectCountryNewZealand);
-			 commonEvents.click(clickOnCountryDropdown);
-			 commonEvents.click(selectCountrySouthAfrica);
-			 commonEvents.click(clickOnCountryDropdown);
-			 commonEvents.click(selectCountryUnitedStatesOfAmerica); 
-		}catch(Exception e) {
-			throw e;
-		}
-		return true;
+		
+		return false;
 }
 	/**@Test6
 	 * about this method selectEachCountryOneByOneFromCountryDrpdownAndValidate() 
@@ -218,16 +135,8 @@ public class FormManagement_L1_Pages extends StartupPage
 	 */
 
 	public String selectAustraliaInCountryDrpdownAndValidate() throws Exception {
-		try {			
-			 commonEvents.click(refreshButton);			 
-			 commonEvents.click(clickOnCountryDropdown);
-			 commonEvents.click(selectCountryAustralia);		 
-			 String getCountryNameFromCountryDropdown = commonEvents.getText(clickOnCountryDropdown);
-			 System.out.println("Fetch the selected Country Name "+ getCountryNameFromCountryDropdown);		
-			 return getCountryNameFromCountryDropdown;
-		}catch(Exception e) {
-			throw e;
-		}
+		
+		return null;
 	}
 	/**@Test7
 	 * about this method selectEachCountryOneByOneFromCountryDrpdownAndValidate() 
@@ -237,22 +146,8 @@ public class FormManagement_L1_Pages extends StartupPage
 	 * @author : Yaksha
 	 */
 	public boolean checkandUncheckEachCheckBoxAndValidateThatCheckBox() throws Exception {
-		try {
-			commonEvents.click(CricketCheckBox);
-			commonEvents.click(CricketCheckBox);
-			commonEvents.click(MoviesCheckBox);
-			commonEvents.click(MoviesCheckBox);
-			commonEvents.click(HockeyCheckBox);
-			commonEvents.click(HockeyCheckBox);
-			commonEvents.click(CricketCheckBox);
-			commonEvents.click(MoviesCheckBox);
-			commonEvents.click(HockeyCheckBox);
-			WebElement clickOnHockeyCheckBox = driver.findElement(By.xpath("//input[@value='Hockey']"));
-			clickOnHockeyCheckBox.isSelected();
-		}catch(Exception e) {
-			throw e;
-		}
-		return true;
+		
+		return false;
 	}
 	
 	/**@Test8
@@ -263,20 +158,8 @@ public class FormManagement_L1_Pages extends StartupPage
 	 * @author : Yaksha
 	 */
 	public boolean selecteachRadioButtonvalidateEachRadioButtonoptionShouldBeSelectableAttime() throws Exception {
-		try {
-			commonEvents.click(maleRadioButton);
-			WebElement maleRadioButton = driver.findElement(By.xpath("//input[@value='Male']"));
-			maleRadioButton.isSelected();
-			Thread.sleep(2000);
-			commonEvents.click(feMaleRadioButton);
-			WebElement femaleRadioButton = driver.findElement(By.xpath("//input[@value='FeMale']"));
-			femaleRadioButton.isSelected();
-			Thread.sleep(2000);
-			
-		}catch(Exception e) {
-			throw e;
-		}
-		return true;
+		
+		return false;
 	}
 		
 	/**@Test9
@@ -288,27 +171,8 @@ public class FormManagement_L1_Pages extends StartupPage
 	 */
 	
 	public boolean selectYearMonthDate() throws Exception {
-		try {
-			
-			WebElement selectYeardropdown = driver.findElement(By.xpath("//select[@placeholder='Year']"));
-			Select select = new Select(selectYeardropdown);
-			select.selectByValue("1996");
-			selectYeardropdown.isSelected();
-			Thread.sleep(2000);
-			WebElement selectMonthdropdown = driver.findElement(By.xpath("//select[@placeholder='Month']"));
-			Select select4 = new Select(selectMonthdropdown);
-			select4.selectByVisibleText("June");
-			selectYeardropdown.isSelected();
-			Thread.sleep(2000);
-			WebElement selectDatedropdown = driver.findElement(By.xpath("//select[@placeholder='Day']"));
-			Select select5 = new Select(selectDatedropdown);
-		    select5.selectByValue("25");	
-			selectYeardropdown.isSelected();
-		    Thread.sleep(2000);
-		}catch(Exception e) {
-			throw e;
-		}
-		return true;
+		
+		return false;
 	}
 	
 	/**@Test10
@@ -319,17 +183,8 @@ public class FormManagement_L1_Pages extends StartupPage
 	 * @author : Yaksha
 	 */
 	public boolean clickOnChooseFilUploadButtonAndUploadImage(String pathOfTheFile) throws Exception {
-		try {
-			 commonEvents.click(chooseFile);
-			 Thread.sleep(2000);
-			 String pathOftheFile="C:\\Users\\Abhisek_Pc\\Desktop\\Screenshot (63).png";
-			 Thread.sleep(3000);
-			 commonEvents.fileUpload(pathOftheFile);
-			
-		}catch(Exception e) {
-			throw e;
-		}
-		return true;
+		
+		return false;
 	}
 	
 
@@ -341,20 +196,8 @@ public class FormManagement_L1_Pages extends StartupPage
 	 * @author : Yaksha
 	 */
 	public boolean clickOnRegisterAndFillFirstNameTextboxlastNameTextboxaddressInputAreaboxemailAddressTextboxAndsubmitButton(Map<String, String> expectedData) throws Exception {
-		try {
-			    commonEvents.click(RegisterNavigationMenu);
-			    commonEvents.sendKeys(firstNameTextbox,expectedData.get("firstName"));	
-			    commonEvents.sendKeys(lastNameTextbox,expectedData.get("lastName"));	
-				commonEvents.sendKeys(addressInputAreabox,expectedData.get("adds"));	
-				commonEvents.sendKeys(emailAddressTextbox,expectedData.get("emaiI"));
-				Thread.sleep(5000);
-				commonEvents.jsClick(submitButton);
-				
-
-		}catch(Exception e) {
-			throw e;
-		}
-		return true;
+		
+		return false;
 	}
 
 }
