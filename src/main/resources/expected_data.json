@@ -16,6 +16,10 @@
 		"password":"Surya@123456",
 		"confirmPassword":"Surya@123456",
 		"CountryName":"Australia"
+},
+"PathOfTheImage":{
+	"imagePath":"\\testImage\\uploadImage.png"
+	
 }
 
 }
