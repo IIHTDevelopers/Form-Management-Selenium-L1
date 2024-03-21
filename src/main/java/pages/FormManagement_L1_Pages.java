@@ -175,11 +175,11 @@ public class FormManagement_L1_Pages extends StartupPage
 	/**@Test10
 	 * about this method clickOnChooseFilUploadButtonAndUploadImage() 
 	 * @param : none
-	 * @description : click on choose file button and upload the image. You need to specify the path of file explicilty in your code
+	 * @description : click on choose file button and upload the image. 
 	 * @return : boolean
 	 * @author : Yaksha
 	 */
-	public boolean clickOnChooseFilUploadButtonAndUploadImage() throws Exception {
+	public boolean clickOnChooseFilUploadButtonAndUploadImage(Sting filePath) throws Exception {
 		return false;
 	}
 
