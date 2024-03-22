@@ -179,7 +179,7 @@ public class FormManagement_L1_Pages extends StartupPage
 	 * @return : boolean
 	 * @author : Yaksha
 	 */
-	public boolean clickOnChooseFilUploadButtonAndUploadImage(Sting filePath) throws Exception {
+	public boolean clickOnChooseFilUploadButtonAndUploadImage(String filePath) throws Exception {
 		return false;
 	}
 
