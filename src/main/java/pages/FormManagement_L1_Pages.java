@@ -53,7 +53,11 @@ public class FormManagement_L1_Pages extends StartupPage
 	By refreshButton = By.xpath(""); 
 	By chooseFile = By.xpath(""); 
 	By uploadImageFileName =By.xpath(""); 
-
+	By interactionNavigationBar = By.xpath("");
+	By selectableOption = By.xpath("");
+	By serializeOption = By.xpath("");
+	By sakinaliumCrossBrowserTestingOption = By.xpath("");
+	By messageAfterClickingSakinaliumCrossBrowserTestingOption = By.id("");
 
 
 
@@ -172,19 +176,10 @@ public class FormManagement_L1_Pages extends StartupPage
 		return false;
 	}
 
+	
+
+
 	/**@Test10
-	 * about this method clickOnChooseFilUploadButtonAndUploadImage() 
-	 * @param : none
-	 * @description : click on choose file button and upload the image. 
-	 * @return : boolean
-	 * @author : Yaksha
-	 */
-	public boolean clickOnChooseFilUploadButtonAndUploadImage(String filePath) throws Exception {
-		return false;
-	}
-
-
-	/**@Test11
 	 * about this method filltheDetailsAndClickOnTheSubmitButton() 
 	 * @param : Map<String, String>
 	 * @description :click on the register and fill first name text field,lastNameTextbox,,emailAddressTextbox and then click on submit button
@@ -193,6 +188,17 @@ public class FormManagement_L1_Pages extends StartupPage
 	 */
 	public boolean filltheDetailsAndClickOnTheSubmitButton(Map<String, String> expectedData) throws Exception {
 		return false;
+	}
+
+	/**@Test11
+	 * about this method afterClickOnSakinaliumCrossBrowserTestingDisplayTheText() 
+	 * @param : null
+	 * @description : click on Interaction Navigation Menu bar, then click on selectable option, then click on Serialize tab, then click on Sakinalium - Cross Browser Testing option. after click on Sakinalium - Cross Browser Testing some text value will display . Fetch that text value
+	 * @return : String
+	 * @author : Yaksha
+	 */
+	public String afterClickOnSakinaliumCrossBrowserTestingDisplayTheText() throws Exception {
+		return null;
 	}
 
 }

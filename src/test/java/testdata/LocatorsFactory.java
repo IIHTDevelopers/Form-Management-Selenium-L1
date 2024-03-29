@@ -24,7 +24,7 @@ public class LocatorsFactory extends StartupPage {
 	By hockeyCheckBox = By.xpath("//input[@value='Hockey']"); 
 	By maleRadioButton = By.xpath("//input[@value='Male']");
 	By selectYear = By.xpath("//select[@placeholder='Year']");
-
+	By messageAfterClickingSakinaliumCrossBrowserTestingOption = By.id("feedback");
 	public LocatorsFactory(WebDriver driver) {
 		super(driver);
 		// TODO Auto-generated constructor stub
@@ -113,6 +113,10 @@ public boolean compareImages(BufferedImage img1, BufferedImage img2) {
 	public WebElement selectYearDropdown(WebDriver driver) {
 		WebElement selectYearDropdownWebElement = driver.findElement(selectYear);
         return selectYearDropdownWebElement;
+    }
+	public WebElement messageAfterClickingSakinaliumCrossBrowserTestingOptionIsPresent(WebDriver driver) {
+		WebElement messageAfterClickingSakinaliumCrossBrowserTestingOptionWebElement = driver.findElement(messageAfterClickingSakinaliumCrossBrowserTestingOption);
+        return messageAfterClickingSakinaliumCrossBrowserTestingOptionWebElement;
     }
 
 }
