@@ -49,7 +49,7 @@ public class FormManagement_L1_TestCases extends AppTestBase {
 	
 	
 	@Test(priority = 1, groups = {"sanity"}, description="Navigate to the URL and Validate the Home Page")
-	public void DemoRegisterAutomation() throws Exception {
+	public void validateTitleOfHomePage() throws Exception {
 		RegisterPageInstance = new FormManagement_L1_Pages(driver);
 		Map<String, String> expectedData = new FileOperations().readExcelPOI(expectedDataFilePath, "HomePage_Title");
 		Assert.assertEquals(RegisterPageInstance.validateTitleOfHomePage(), expectedData.get("pageTitle"));
@@ -57,12 +57,12 @@ public class FormManagement_L1_TestCases extends AppTestBase {
 	}	
 	
 	@Test(priority = 2, groups = {"sanity"}, description="Click SwitchTo  Alert Link. and Validate if control is navigated to new page")
-	public void clickOnSwitchToAlertAndValidateTitlePage() throws Exception {
+	public void clickOnSwitchToAlertandValidateTitleOfPage() throws Exception {
 		
 		softAssert = new SoftAssert();
 		RegisterPageInstance = new FormManagement_L1_Pages(driver);
 		Map<String, String> expectedData = new FileOperations().readExcelPOI(expectedDataFilePath, "alerts_Page");
-		Assert.assertEquals(RegisterPageInstance.clickOnSwitchToAlertandValidateTitlePage(), expectedData.get("alertsTitle"));
+		Assert.assertEquals(RegisterPageInstance.clickOnSwitchToAlertandValidateTitleOfPage(), expectedData.get("alertsTitle"));
 		Assert.assertTrue(LocatorsFactoryInstance.getswitchToNavigationMenu(driver).isDisplayed(), "switch to menu is not present in the current page, Please check manually");	
 	}	
 	
@@ -70,7 +70,7 @@ public class FormManagement_L1_TestCases extends AppTestBase {
 	public void handleAlertsPopupAndValidateTheTextInsideAnAlertsPopup() throws Exception {
 		RegisterPageInstance = new FormManagement_L1_Pages(driver);
 		Map<String, String> expectedData = new FileOperations().readExcelPOI(expectedDataFilePath, "alerts_message");
-		Assert.assertEquals(RegisterPageInstance.handleAlertsPopupValidateAnAlertsPopup(), expectedData.get("alertsMessage"));
+		Assert.assertEquals(RegisterPageInstance.handleAlertsPopupAndValidateTheTextInsideAnAlertsPopup(), expectedData.get("alertsMessage"));
 		Assert.assertTrue(LocatorsFactoryInstance.getAlertWithOkButton(driver).isDisplayed(), "switch to menu is not present in the current page, Please check manually");		
 	}	
 	
@@ -86,12 +86,12 @@ public class FormManagement_L1_TestCases extends AppTestBase {
 	@Test(priority = 5, groups = {"sanity"}, description="Click on the country dropdown and Select each country option one by one.")
 	public void clickOnCountryDropDownAndSelectEachCountryOptionsOneByOne() throws Exception {
 		RegisterPageInstance = new FormManagement_L1_Pages(driver);
-		Assert.assertTrue(RegisterPageInstance.clickOnSelectCountryAndSelectEachCountry(), "Register button is not present, please check manually");	
+		Assert.assertTrue(RegisterPageInstance.clickOnCountryDropDownAndSelectEachCountryOptionsOneByOne(), "Register button is not present, please check manually");	
 		Assert.assertTrue(LocatorsFactoryInstance.countryDropdownIsPresent(driver).isDisplayed(), "Country dropdown menu is not present in the current page, Please check manually");
 	}	
 	
 	@Test(priority = 6, groups = {"sanity"}, description="Click on the country dropdown and Validate if each country option is selectable from the dropdown.")
-	public void clickOnCountryDropDownAndValidateEachCountryOptionsIsSelectableOneByOneFromDropdown() throws Exception {
+	public void selectAustraliaInCountryDrpdownAndValidate() throws Exception {
 		RegisterPageInstance = new FormManagement_L1_Pages(driver);
 		Map<String, String> expectedData = new FileOperations().readExcelPOI(expectedDataFilePath, "userdetails");
 		Assert.assertEquals(RegisterPageInstance.selectAustraliaInCountryDrpdownAndValidate(), expectedData.get("CountryName"));
@@ -115,7 +115,7 @@ public class FormManagement_L1_TestCases extends AppTestBase {
 	@Test(priority = 9, groups = {"sanity"}, description="Select different dates from the Date Of Birth fields")
 	public void selectMonthYearDateInDropdown() throws Exception {
 		RegisterPageInstance = new FormManagement_L1_Pages(driver);
-		Assert.assertTrue(RegisterPageInstance.selectYearMonthDate(), "date,month and year dropdowns are  not present, please check manually");	
+		Assert.assertTrue(RegisterPageInstance.selectMonthYearDateInDropdown(), "date,month and year dropdowns are  not present, please check manually");	
 		Assert.assertTrue(LocatorsFactoryInstance.selectYearDropdown(driver).isDisplayed(), "Country dropdown menu is not present in the current page, Please check manually");
 	}
 	
@@ -132,10 +132,10 @@ public class FormManagement_L1_TestCases extends AppTestBase {
 
 
 	@Test(priority = 11, groups = {"sanity"}, description="click on Interaction Navigation Menu bar, then click on selectable option, then click on Serialize tab, then click on Sakinalium - Cross Browser Testing option. after click on Sakinalium - Cross Browser Testing some text value will display . Fetch that text value")
-	public void afterClickOnSakinaliumCrossBrowserTestingDisplayThatText() throws Exception {
+	public void afterClickOnSeleniumCrossBrowserTestingDisplayTheText() throws Exception {
 		RegisterPageInstance = new FormManagement_L1_Pages(driver);
 		Map<String, String> expectedData = new FileOperations().readExcelPOI(expectedDataFilePath, "Successfull_message");
-		Assert.assertEquals(RegisterPageInstance.afterClickOnSakinaliumCrossBrowserTestingDisplayTheText(),expectedData.get("Message_After_ClickingSakinaliumCrossBrowserTestingOption") ,"Click On Sakinalium Cross Browser Testing option is not present, please check manually");
+		Assert.assertEquals(RegisterPageInstance.afterClickOnSeleniumCrossBrowserTestingDisplayTheText(),expectedData.get("Message_After_ClickingSakinaliumCrossBrowserTestingOption") ,"Click On Sakinalium Cross Browser Testing option is not present, please check manually");
 		Assert.assertTrue(LocatorsFactoryInstance.messageAfterClickingSakinaliumCrossBrowserTestingOptionIsPresent(driver).isDisplayed(), "Message After Clicking on Sakinalium Cross Browser Testing Option Is not present in the current page, Please check manually");
 	}
 	
