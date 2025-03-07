@@ -3,8 +3,11 @@ package pages;
 
 import java.util.Map;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.asserts.SoftAssert;
 
 public class FormManagement_L1_Pages extends StartupPage 
@@ -13,53 +16,44 @@ public class FormManagement_L1_Pages extends StartupPage
 	/*
 	 * WebElemet Declaration
 	 */	
-	By pageTitleText = By.xpath(""); 
-	By switchToNavigationMenu = By.xpath(""); 
-	By alertPopup = By.xpath("");  
-	By buttonToDisplayAnAlertBox = By.xpath("");  
-	By registerNavigationMenu = By.xpath(""); 
-	By firstNameTextbox = By.xpath("");  
-	By lastNameTextbox = By.xpath("");  
-	By addressInputAreabox = By.xpath(""); 
-	By emailAddressTextbox = By.xpath(""); 
-	By phoneNumberTextbox =By.xpath(""); 
-	By maleRadioButton = By.xpath(""); 
-	By feMaleRadioButton = By.xpath(""); 
-	By cricketCheckBox = By.xpath(""); 
-	By moviesCheckBox = By.xpath(""); 
-	By hockeyCheckBox =By.xpath(""); 
-	By languageDropdown = By.xpath(""); 
-	By selectEnglish = By.xpath(""); 
-	By selectHindi = By.xpath(""); 
-	By skillsDropdown = By.xpath(""); 
-	By countryDropdown = By.xpath(""); 
-	By clickOnCountryDropdown = By.xpath(""); 
-	By selectCountryAustralia = By.xpath(""); 
-	By selectCountryBangladesh = By.xpath(""); 
-	By selectCountryDenmark = By.xpath(""); 
-	By selectCountryHongKong = By.xpath(""); 
-	By selectCountryIndia = By.xpath(""); 
-	By selectCountryJapan = By.xpath(""); 
-	By selectCountryNetherlands = By.xpath(""); 
-	By selectCountryNewZealand = By.xpath(""); 
-	By selectCountrySouthAfrica = By.xpath(""); 
-	By selectCountryUnitedStatesOfAmerica =By.xpath(""); 
-	By selectYear = By.xpath(""); 
-	By selectMonth = By.xpath(""); 
-	By selectDate = By.xpath(""); 
-	By password =By.xpath(""); 
-	By confirmPassword = By.xpath(""); 
-	By submitButton = By.xpath(""); 
-	By refreshButton = By.xpath(""); 
-	By chooseFile = By.xpath(""); 
-	By uploadImageFileName =By.xpath(""); 
-	By interactionNavigationBar = By.xpath("");
-	By selectableOption = By.xpath("");
-	By serializeOption = By.xpath("");
-	By sakinaliumCrossBrowserTestingOption = By.xpath("");
-	By messageAfterClickingSakinaliumCrossBrowserTestingOption = By.id("");
-
-
+//	TC-1&2 Locators
+	By switchToNavigationMenu = null; 
+	By alertPopup = null; 
+//	TC-3 Locators
+	By buttonToDisplayAnAlertBox = null; 
+//	TC-4 Locators
+	By registerNavigationMenu = null; 
+	By firstNameTextbox = null; 
+	By lastNameTextbox = null; 
+	By addressInputAreabox = null; 
+	By emailAddressTextbox = null; 
+	By phoneNumberTextbox = null; 
+	By maleRadioButton = null; 
+	By feMaleRadioButton = null; 
+	By cricketCheckBox = null; 
+	By moviesCheckBox = null; 
+	By hockeyCheckBox = null; 
+//	TC-5,6,7 & 8  Locators
+	By clickOnCountryDropdown = null;
+	By selectCountryAustralia = null; 
+	By selectCountryBangladesh = null; 
+	By selectCountryDenmark = null; 
+	By selectCountryHongKong = null; 
+	By selectCountryIndia = null; 
+	By selectCountryJapan = null; 
+//	TC-9 Locators
+	By selectYear = null;
+	By selectMonth = null; 
+	By selectDate = null; 
+//	TC-10 Locators
+	By submitButton = null;
+//	TC-11 Locators
+	By interactionNavigationBar = null;
+	By selectableOption = null;
+	By serializeOption = null;
+	By sakinaliumCrossBrowserTestingOption = null;
+	By messageAfterClickingSeleniumCrossBrowserTestingOption = null;
+	
 
 	/*
 	 * Getting the page name
@@ -84,6 +78,7 @@ public class FormManagement_L1_Pages extends StartupPage
 	 * @author : Yaksha
 	 */
 	public String validateTitleOfHomePage() throws Exception {
+		//Write your logic here
 		return null;
 	}
 	/**@Test2
@@ -93,8 +88,10 @@ public class FormManagement_L1_Pages extends StartupPage
 	 * @return : String
 	 * @author : Yaksha
 	 */
-	public String  clickOnSwitchToAlertandValidateTitlePage() throws Exception {
-		return null;
+	public String  clickOnSwitchToAlertandValidateTitleOfPage() throws Exception {
+		//Write your logic here
+				return null;
+			
 	}
 
 	/**@Test3
@@ -105,8 +102,10 @@ public class FormManagement_L1_Pages extends StartupPage
 	 * @author : Yaksha
 	 */
 
-	public String handleAlertsPopupValidateAnAlertsPopup() throws Exception {
-		return null;
+	public String handleAlertsPopupAndValidateTheTextInsideAnAlertsPopup() throws Exception {
+		//Write your logic here
+				return null;
+			
 	}
 
 	/**@Test4
@@ -118,7 +117,8 @@ public class FormManagement_L1_Pages extends StartupPage
 	 */
 
 	public boolean clickOnRegisterLinkandFillTheForms(Map<String, String> expectedData) throws Exception {
-		return false;
+		//Write your logic here
+				return false;
 	}
 	/**@Test5
 	 * about this method clickOnSelectCountryAndSelectEachCountry() 
@@ -128,8 +128,10 @@ public class FormManagement_L1_Pages extends StartupPage
 	 * @author : Yaksha
 	 */
 
-	public boolean clickOnSelectCountryAndSelectEachCountry() throws Exception {
-		return false;
+	public boolean clickOnCountryDropDownAndSelectEachCountryOptionsOneByOne() throws Exception {
+		//Write your logic here
+				return false;
+			
 	}
 	/**@Test6
 	 * about this method selectEachCountryOneByOneFromCountryDrpdownAndValidate() 
@@ -140,7 +142,9 @@ public class FormManagement_L1_Pages extends StartupPage
 	 */
 
 	public String selectAustraliaInCountryDrpdownAndValidate() throws Exception {
-		return null;
+		//Write your logic here
+				return null;
+			
 	}
 	/**@Test7
 	 * about this method checkUncheckCheckBoxAndValidateThatCheckBox() 
@@ -150,7 +154,9 @@ public class FormManagement_L1_Pages extends StartupPage
 	 * @author : Yaksha
 	 */
 	public boolean checkUncheckCheckBoxAndValidateThatCheckBox() throws Exception {
-		return false;
+		//Write your logic here
+				return false;
+			
 	}
 
 	/**@Test8
@@ -161,7 +167,9 @@ public class FormManagement_L1_Pages extends StartupPage
 	 * @author : Yaksha
 	 */
 	public boolean selectRadioButtonvalidateRadioButtonOptionIsSelectable() throws Exception {
-		return false;
+		//Write your logic here
+				return false;
+			
 	}
 
 	/**@Test9
@@ -172,11 +180,11 @@ public class FormManagement_L1_Pages extends StartupPage
 	 * @author : Yaksha
 	 */
 
-	public boolean selectYearMonthDate() throws Exception {
-		return false;
+	public boolean selectMonthYearDateInDropdown() throws Exception {
+		//Write your logic here
+				return false;
+			
 	}
-
-	
 
 
 	/**@Test10
@@ -187,9 +195,11 @@ public class FormManagement_L1_Pages extends StartupPage
 	 * @author : Yaksha
 	 */
 	public boolean filltheDetailsAndClickOnTheSubmitButton(Map<String, String> expectedData) throws Exception {
-		return false;
+		//Write your logic here
+				return false;
+			
 	}
-
+	
 	/**@Test11
 	 * about this method afterClickOnSakinaliumCrossBrowserTestingDisplayTheText() 
 	 * @param : null
@@ -197,8 +207,10 @@ public class FormManagement_L1_Pages extends StartupPage
 	 * @return : String
 	 * @author : Yaksha
 	 */
-	public String afterClickOnSakinaliumCrossBrowserTestingDisplayTheText() throws Exception {
-		return null;
+	public String afterClickOnSeleniumCrossBrowserTestingDisplayTheText() throws Exception {
+		//Write your logic here
+				return null;
+			
 	}
 
 }
